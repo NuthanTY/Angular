@@ -1,0 +1,24 @@
+<script>
+    let cal ={
+        a:0,
+        b:0
+    };
+
+    function read(){
+        cal.a = +prompt('a');
+        cal.b = +prompt('b');
+    }
+
+    function sum() {
+        return (cal.a + cal.b);
+    }
+
+    function mul(){
+        return (cal.a * cal.b)
+    }
+
+    read();
+    alert(sum());
+    alert(mul());
+
+</script>

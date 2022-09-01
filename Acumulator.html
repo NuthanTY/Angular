@@ -1,0 +1,17 @@
+<script>
+    function acm(val){
+        this.value=val,
+        this.read =()=>{
+            this.value += +prompt('enter value');
+        }
+
+    }
+
+    let expl = new acm(5);
+
+expl.read();
+expl.read();
+
+alert(expl.value);
+
+</script>

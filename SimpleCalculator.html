@@ -1,0 +1,36 @@
+<script>
+    let A,B,op;
+    function calc(){
+        A = +prompt('Enter A');
+
+        B = +prompt(' Enter B');
+
+        opr();
+
+        switch (op){
+        
+            case `+` : alert(A+B);
+            break;
+
+            case `-`: alert(A-B);
+            break;
+            case `*`: alert(A*B);
+            break;
+            case `%`: alert(A%B);
+            break;
+
+            case `/`: alert(A/B);
+            break;
+
+            default: alert('Enter proper operand')
+        }
+
+    }
+
+    function opr(){
+        op = prompt('enter the Symbol');
+        return op;
+    }
+
+    calc();
+</script>

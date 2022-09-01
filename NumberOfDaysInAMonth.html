@@ -1,0 +1,45 @@
+<script>
+    let year = +prompt("Enter year");
+    let month = +prompt("Enter month");
+
+    function leap(){
+        if(year %4 ==0 || year % 400 == 0 && year % 100 != 0){
+            return 29;
+        }
+        return 28;
+    }
+
+    switch (month){
+        case 1: alert('31');
+        break;
+        case 2: alert(leap());
+        break;
+        case 3: alert('31');
+        break;
+        case 4: alert('30');
+        break;
+        case 5: alert('31');
+        break;
+        case 6: alert('30');
+        break;
+        case 7: alert('31');
+        break;
+        case 8: alert('31');
+        break;
+        case 9: alert('30');
+        break;
+        case 10: alert('31');
+        break;
+        case 11: alert('30');
+        break;
+        case 12: alert('31');
+        break;
+
+        default: alert("Enter month between 1 to 12")
+
+        
+        
+        
+    }
+    leap();
+</script>

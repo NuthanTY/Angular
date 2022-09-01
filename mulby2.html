@@ -1,0 +1,30 @@
+<script>
+ let user ={
+    age: 27,
+    days:35,
+    name: 'sangam'
+ }
+
+ let user2 ={};
+
+ function mul(obj1,obj2){
+    for(let key in obj1){
+        if(typeof obj1[key] =="number"){
+            obj2[key] = obj1[key]*2
+        }
+        else{
+         obj2[key] = obj1[key];
+        }
+    }
+
+ }
+
+ mul(user,user2);
+console.log(user)
+ console.log(user2);
+
+//  for (let key in user){
+//     alert(user[key]);
+//  }
+
+</script>

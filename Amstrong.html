@@ -1,0 +1,29 @@
+<script>
+    let num, temp1,sum=0,rem;
+
+    num = +prompt('Enter the value to check');
+    
+
+    
+
+    function amstrong(){
+temp1 = num;
+while(temp1>0){
+
+    rem = temp1 % 10;
+    sum = sum + rem **3;
+    temp1 = Math.trunc(temp1/10);
+    
+}        
+
+if(sum == num){
+     alert("Yes");
+}
+else{
+    alert("NO");
+}
+
+    }
+
+    amstrong();
+</script>

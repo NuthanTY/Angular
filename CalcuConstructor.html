@@ -1,0 +1,21 @@
+<script>
+    function cal(){
+        this.read= function(){
+        this.A = +prompt('A?');
+
+        this.B = +prompt('B?')
+        }
+        this.sum= () =>{
+           return this.A+this.B
+        }
+
+        this.mul =()=>{
+            return(this.A*this.B);
+        }
+    }
+
+    let calculator = new cal();
+    calculator.read();
+    alert('Sum:'+ calculator.sum());
+    alert('Mul:'+ calculator.mul());
+</script>
